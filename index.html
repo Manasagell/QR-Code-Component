@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Frontend Mentor | QR code component</title>
+  <style>
+     html, body {
+     margin: 0;
+     padding: 0;
+    }
+    .container{
+      height: 100vh;
+      width: 100vw;
+      background-color: rgb(209, 223, 241);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      }
+    .component{
+      height: auto; 
+      width: 80%; 
+      max-width: 300px;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-radius: 10px;
+      padding: 10px;
+    }
+    .info{
+      height:auto; 
+      width: 100%;
+      font-family: "Source Sans Pro", "Arial", sans-serif;
+      text-align: center; /* Center text */
+    }
+    p{
+      font-size: medium;
+      color: rgb(121, 113, 113);
+      text-align: center;
+    }
+    
+    .Qrcode{
+      height: 60%;
+      width:100%;
+    }
+    img{
+        height: 100%;
+        width: 100%;
+       border-radius: 9px;
+      }
+      @media only screen and (max-width: 600px) {
+      .component {
+        width: 100%; 
+        max-width: none;
+      }
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+      <div class="component">
+        <div class="Qrcode" >
+         <img src="images/image-qr-code.png"></div>
+        <div class="info">
+          <h3>Improve your front-end skills by building projects</h3>
+          <p> Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
